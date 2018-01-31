@@ -26,6 +26,8 @@ function isValidCreditCard(numberCard)
 
 ## Funciones de callback
 
+Son funciones que se pasan dentro de otra función como argumento.
+
 Dentro del manejador de evento input, se invoca a la función ` isValidCreditCard `, en este contexto, la función es una función de callback. 
 
 ## Funciones Statement
@@ -86,6 +88,12 @@ function activeButton()
 function desactiveButton()
 function longitud(input)
 ~~~
+
+## Contextos de ejecución
+
+1. Contexto de ejecución global
+2. $(document).ready(function()
+3. console.log('Pro ...')
 
 ## Funciones que forman parte de la pila de ejecución
 
