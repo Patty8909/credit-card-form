@@ -6,7 +6,15 @@
 
 ## Funciones Globales
 
-Tenemos 5 funciones globales, estas son:
+La siguiente es una función global:
+
+~~~
+$(document).ready(function() { ... })
+~~~
+
+## Funciones Locales
+
+Las siguientes son funciones locales:
 
 ~~~
 function activeButton() 
@@ -15,6 +23,10 @@ function longitud(input)
 function soloNumeros(input)
 function isValidCreditCard(numberCard) 
 ~~~
+
+## Funciones de callback
+
+Dentro del manejador de evento input, se invoca a la función ` isValidCreditCard `, en este contexto, la función es una función de callback. 
 
 ## Funciones Statement
 
@@ -73,4 +85,20 @@ Un closure es una función libre de variables, un closure no tiene variables pro
 function activeButton() 
 function desactiveButton()
 function longitud(input)
+~~~
+
+## Funciones que forman parte de la pila de ejecución
+
+~~~
+$(document).ready(function() { ... }
+console.log('Probar con el numero valido 4544164785372342');
+~~~
+
+## Funciones que forman parte de la cola de eventos
+
+~~~
+function activeButton() 
+function desactiveButton()
+function longitud(input)
+function soloNumeros(input)
 ~~~
